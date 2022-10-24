@@ -7,7 +7,7 @@ import {
 import App from './App';
 import { setContext } from '@apollo/client/link/context';
 const httpLink = createHttpLink({
-  uri: import.meta.env.VITE_SERVER_URL,
+  uri: 'https://frozen-retreat-12820.herokuapp.com/',
 });
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem('token');
